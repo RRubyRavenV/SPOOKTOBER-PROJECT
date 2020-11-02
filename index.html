@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Spooktober</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1>
+		<center>Trick or Treat of Death<center>
+	</h1>
+	<script src="script.js">
+
+	</script>
+	<h1 id="words">
+    <center><em><strong>Survive the trick or treaters or die trying</strong></em><center>
+  </h1>
+  <h1 id="instructions">
+    <center><em><strong>PLEASE CLICK PLAY TO BEGIN</strong><em><center>
+  </h1>
+    <audio src="audio"></audio>
+    <!button for starting game(disappears, plays music, brings up door, shows instructions, heart system)>
+    <center>
+      <button class="button" id='start' onclick=webstart();>
+        <strong><center>PLAY<center><strong>
+      </button>
+    </center>
+    
+    <!door comes out after button pressed, characters will come out(img replaced)>
+      <center>
+        <img id="door" src="https://art.pixilart.com/a0692b84b56733b.png" style="visibility: hidden;" width="400;" onclick=rng();>
+      </center>
+    
+    <!3 different hearts for point system>
+    <div class="absolute" style='visibility: hidden'>
+      <img id="heart1" src="https://freepngimg.com/thumb/heart/36704-5-dark-red-heart-transparent-background.png" width="50" height="50">
+      <img id="heart2" src="https://freepngimg.com/thumb/heart/36704-5-dark-red-heart-transparent-background.png" width="50" height="50">
+      <img id="heart3" src="https://freepngimg.com/thumb/heart/36704-5-dark-red-heart-transparent-background.png" width="50" height="50">
+    </div>
+    
+    <!placeholder for choice buttons>
+    <div style= "position:absolute; left:150px; top:150px; visibility: hidden">
+    <img id="choice1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/YouTube_Red_Diamond_Play_Button.svg/1200px-YouTube_Red_Diamond_Play_Button.svg.png" width="150" height="150" onclick=doItAll1()>
+    </div>
+    <div style= "position:absolute; left:150px; bottom:50px; visibility: hidden">
+    <img id="choice2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/YouTube_Red_Diamond_Play_Button.svg/1200px-YouTube_Red_Diamond_Play_Button.svg.png" width="150" height="150" onclick=doItAll2()>
+    </div>
+    <div style= "position:absolute; right:150px; top:150px; visibility: hidden">
+    <img id="choice3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/YouTube_Red_Diamond_Play_Button.svg/1200px-YouTube_Red_Diamond_Play_Button.svg.png" width="150" height="150" onclick=doItAll3()>
+    </div>
+    <div style= "position:absolute; right:150px; bottom:50px; visibility: hidden">
+    <img id="choice4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/YouTube_Red_Diamond_Play_Button.svg/1200px-YouTube_Red_Diamond_Play_Button.svg.png" width="150" height="150" onclick=doItAll4()>
+    </div>
+    
+    <!score>
+    <div style= 'visibility: hidden'>
+      <p style="font-size: 40px" id="score"><strong>0</strong></p>
+    </div>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!audio>
+    <div style= 'visibility: hidden'><audio id="doorbell" controls play; loop>
+      <source src="Doorbell.mp3" type="audio/mpeg"</audio></div>
+  </body>
+</html>
