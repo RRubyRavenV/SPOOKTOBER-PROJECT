@@ -1,0 +1,73 @@
+body {
+  background-image: url("https://images6.alphacoders.com/552/552086.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: auto 200%;
+}
+h1 {text-shadow: 0 0 3px #ff6600, 0 0 5px #ff3300;}
+p {text-shadow: 0 0 3px #ff6600, 0 0 3px #ff3300;}
+.button {
+     background-color: #f4511e;
+     color: white;
+     padding: 16px 16px;
+     text-align: center;
+     font-size: 16px;
+     margin: 4px 2px;
+     opacity: 1;
+     transition: 0.3s;
+     display: inline-block;
+     text-decoration: none;
+     cursor: pointer;
+     border: 2px solid #000000;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+
+  .button: hover {
+    opacity:1
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+.button {border-radius: 8px;}
+div.absolute {
+position: absolute;
+bottom: -90px;
+left: 20px;
+}
+p {position: absolute; right: 30px; bottom: -130px;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
